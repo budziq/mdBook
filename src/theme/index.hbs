@@ -44,12 +44,13 @@
                 document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
             }
         </script>
+        <script src="book.js"></script>
     </head>
     <body class="light">
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script type="text/javascript">
             var theme = localStorage.getItem('theme');
-            if (theme == null) { theme = 'light'; }
+            if (theme == null || theme == 'undefined' || theme === undefined) { theme = 'light'; }
             $('body').removeClass().addClass(theme);
         </script>
 
@@ -138,6 +139,5 @@
 
 
         <script src="highlight.js"></script>
-        <script src="book.js"></script>
     </body>
 </html>
