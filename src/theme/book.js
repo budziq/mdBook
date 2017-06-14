@@ -100,8 +100,8 @@ $( document ).ready(function() {
 
             $('.theme').click(function(){
                 var theme = $(this).attr('id');
-
                 set_theme(theme);
+                popup.remove();
             });
         }
 
