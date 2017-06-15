@@ -52,8 +52,8 @@ $( document ).ready(function() {
 
     // Interesting DOM Elements
     var sidebar = $("#sidebar");
-    var page_wrapper = $("#page-wrapper");
-    var content = $("#content");
+    var page = $(".page");
+    page.focus();
 
     // Toggle sidebar
     $("#sidebar-toggle").click(sidebarToggle);
