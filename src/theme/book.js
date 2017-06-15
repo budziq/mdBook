@@ -53,7 +53,11 @@ $( document ).ready(function() {
     // Interesting DOM Elements
     var sidebar = $("#sidebar");
     var page = $(".page");
+
     page.focus();
+    sidebar.focusin(function(){
+        page.focus();
+    });
 
     // Toggle sidebar
     $("#sidebar-toggle").click(sidebarToggle);
